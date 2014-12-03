@@ -7,7 +7,7 @@
 
 
 
-    Consolidation tool for Foundry Nuke.
+    Consolidate tool for Foundry Nuke.
 
 
     Paste the followin items in menu.py
