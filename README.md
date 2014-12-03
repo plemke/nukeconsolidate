@@ -1,8 +1,13 @@
 
-	Author  : Pmg Lemmen
-	Company : Dutchdevelopers
-	email   : peter@dutchdevelopers.nl
-	Date    : 13/12/12
+	Author    : Pmg Lemmen
+	Company   : Dutchdevelopers
+	email     : peter@dutchdevelopers.nl
+	Date      : 13/12/12
+	Copyright : Peter Mg Lemmen All rights reserved
+
+
+
+    Consolidation tool for Foundry Nuke.
 
 
     Paste the followin items in menu.py
