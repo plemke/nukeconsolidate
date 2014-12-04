@@ -18,4 +18,4 @@
     collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
     collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
 
-    add import dutchdevscripts to init.py
+    add import dutchdevnukeconsol to init.py
