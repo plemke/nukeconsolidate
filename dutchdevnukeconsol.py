@@ -4,17 +4,18 @@
 #	Company : Dutchdevelopers
 #	email   : peter@dutchdevelopers.nl
 #	Date    : 13/12/12
+#	Mod     : 4/12/14
 #
-#
+#    
 #    Paste the followin items in menu.py
 #
 #    #Collect Files Menu Node
-#    collectMenu = nuke.menu("Nodes").addMenu("plemkes bud")
+#    collectMenu = nuke.menu("Nodes").addMenu("Consolidator")
 #    collectMenu.addCommand('make backup ', 'dutchdevscripts.dutchdevscripts()')
 #    collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
 #    collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
 #
-#    add import dutchdevscripts to init.py
+#    add import dutchdevnukeconsol to init.py
 #
 #
 #
@@ -126,13 +127,13 @@ def Help():
 ##############################################################
 
 def Manual():
-    url = 'http://www.lemmen.tv/nukemanual'
+    url = 'http://www.dutchdevelopers.nl/nukemanual'
     webbrowser.open_new(url)
 
 ##############################################################
 
 def collectPanel():
-    colPanel = nuke.Panel("pleurop 123")
+    colPanel = nuke.Panel("Consolidator")
     colPanel.addFilenameSearch("Output Path:", "")
     colPanel.addButton("Cancel")
     colPanel.addButton("OK")
@@ -188,7 +189,7 @@ def prepare_current_project():
 #//	+ '/'
 
 
-    globalprogress = nuke.ProgressTask("Plemkes bud")
+    globalprogress = nuke.ProgressTask("Plemkes consolidator")
     globalprogress.setProgress(0)
 
     return 0
@@ -242,8 +243,8 @@ def backup_image_sequence( inode ):
 	global handlesize
 	dest = make_node_dir( inode )
 
-	first = inode['first'].value() - handlesize;
-	last  = inode['last'].value() + handlesize;
+	first = inode['first'].value() - int( handlesize );
+	last  = inode['last'].value() + int( handlesize );
 	total = last-first
 
 	deler = 1.0/total
@@ -469,7 +470,7 @@ def dutchdevscripts():
 
     dpan = nuke.Panel( "Where to save?");
     dpan.setWidth( 300 );
-    dpan.setTitle( "plemkes bud "+plemke_version );
+    dpan.setTitle( "plemkes consolidator  "+plemke_version );
     dpan.addBooleanCheckBox( "backup enabled nodes only" , False );
     dpan.addSingleLineInput( "Handle size" , str( handlesize ) );
     dpan.addFilenameSearch( "Folder Path" , "Select backup folder" );
