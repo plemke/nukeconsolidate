@@ -9,7 +9,11 @@
 
     Consolidate tool for Foundry Nuke.
 
-
+    rename the pyton file to dutchdevscripts.py 
+    and copy it in the plugins directory
+    
+    
+    
     Paste the followin items in menu.py at the end
 
     #Collect Files Menu Node
@@ -18,4 +22,5 @@
       collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
       collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
 
-    add import dutchdevnukeconsol to init.py
+    add the following line to init.py
+    import dutchdevscripts
