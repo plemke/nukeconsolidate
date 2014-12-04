@@ -12,10 +12,10 @@
 
     Paste the followin items in menu.py
 
-    Collect Files Menu Node
-    collectMenu = nuke.menu("Nodes").addMenu("plemkes consolidator")
-    collectMenu.addCommand('make backup ', 'dutchdevscripts.dutchdevscripts()')
-    collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
-    collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
+    #Collect Files Menu Node
+       collectMenu = nuke.menu("Nodes").addMenu("plemkes consolidator")
+       collectMenu.addCommand('make backup ', 'dutchdevscripts.dutchdevscripts()')
+       collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
+       collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
 
     add import dutchdevnukeconsol to init.py
