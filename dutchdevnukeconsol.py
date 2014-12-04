@@ -15,9 +15,11 @@
 #    collectMenu.addCommand('Help', 'dutchdevscripts.Help()')
 #    collectMenu.addCommand('Manual', 'dutchdevscripts.Manual()')
 #
-#    add import dutchdevnukeconsol to init.py
+#    add the following line to init.py
+#    import dutchdevnukeconsol
 #
-#
+#    rename the pyton file to dutchdevscripts.py 
+#    copy dutchdevscripts.py it in the plugins directory
 #
 #
 #===============================================================================
